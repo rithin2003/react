@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff7ed;
+}
+
+.app {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.app h1 {
+    color: #ea580c;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #78716c;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.user-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.user-card {
+    position: relative;
+    background: white;
+    border: 1px solid #fed7aa;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(234, 88, 12, 0.12);
+    transition: 0.3s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(234, 88, 12, 0.2);
+}
+
+.user-number {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #fb923c;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.user-card h2 {
+    color: #c2410c;
+    margin-bottom: 18px;
+    padding-right: 40px;
+}
+
+.user-card p {
+    color: #57534e;
+    margin: 10px 0;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.user-card span {
+    color: #ea580c;
+    font-weight: bold;
+}
+
+.loading,
+.error {
+    text-align: center;
+    margin-top: 100px;
+    color: #ea580c;
+}
+
+.error {
+    color: #dc2626;
+}
+
